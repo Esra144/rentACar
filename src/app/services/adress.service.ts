@@ -13,6 +13,7 @@ export class AddressService {
   constructor(private httpClient:HttpClient) { }
 
   getCities():Observable<City[]>{
+    console.log("esra")
     return this.httpClient.get<City[]>("http://localhost:3000/cities")
   }
 
